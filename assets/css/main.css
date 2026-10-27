@@ -2149,6 +2149,21 @@ button,
       -ms-object-position: center;
       object-position: center;
       width: 100%; }
+    #banner {
+      justify-content: center;   /* centers the text + image pair */
+    }
+
+    #banner .image.object {
+      flex: 0 0 300px;           /* don't grow or shrink */
+      width: 300px;
+      height: 300px;
+      margin: 0 0 0 3rem;
+    }
+
+    #banner .content {
+      flex: 0 1 600px;           /* optional: cap the text width */
+      margin-right: 0;
+    }
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
